@@ -11,5 +11,31 @@ body{
     font-size: 15px;
     font-family: 'Overpass', sans-serif;
     min-height: 100vh;
+    background: var(--very-dark-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.container{
+    background: var(--dark-blue);
+    max-width: 375px;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.main-title{
+    color: var(--white);
+}
+
+.description, .rate{
+    color: var(--light-grey);
+}
+
+.btn{
+    background: var(--orange);
+    color: var(--white);
+    border: none;
+    padding: 1em;
 }
