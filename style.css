@@ -7,7 +7,7 @@
     --very-dark-blue: hsl(216, 12%, 8%);
 }
 
-body{
+body {
     font-size: 15px;
     font-family: 'Overpass', sans-serif;
     min-height: 100vh;
@@ -18,24 +18,68 @@ body{
     align-items: center;
 }
 
-.container{
+.container {
     background: var(--dark-blue);
     max-width: 375px;
     border-radius: 12px;
     padding: 1.5rem;
 }
 
-.main-title{
+.rate-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.thank-you-rate {
+    text-align: center;
+}
+
+.rate-result-section {
+    color: var(--orange);
+    background-color: hsla(216, 12%, 54%, .2);
+    padding: .4em;
+    border-radius: 15px;
+    width: 55%;
+    margin: 1.5em auto;
+}
+
+.icon-star {
+    background: hsla(216, 12%, 54%, .2);
+    padding: .7em;
+    border-radius: 50%;
+    justify-self: left;
+}
+
+.rate-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+.rate {
+    background: hsla(216, 12%, 54%, .1);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: .7em;
+    border-radius: 50%;
+}
+
+.main-title {
     color: var(--white);
 }
 
-.description, .rate{
+.description, .rate {
     color: var(--light-grey);
 }
 
-.btn{
+.btn {
     background: var(--orange);
     color: var(--white);
     border: none;
     padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 20px;
+
 }
