@@ -27,7 +27,7 @@
 <main class="container">
     <!-- Rating state start -->
 
-    <div class="rate-card">
+    <div class="rate-card" id="rate-card">
         <img alt="star icon" class="icon-star" height="20" src="images/icon-star.svg" width="20">
 
         <h1 class="main-title">How did we do?</h1>
@@ -37,15 +37,15 @@
             to help us improve our offering!
         </p>
 
-        <div class="rate-btn">
-            <span class="rate rate-1">1</span>
-            <span class="rate rate-2">2</span>
-            <span class="rate rate-3">3</span>
-            <span class="rate rate-4">4</span>
-            <span class="rate rate-5">5</span>
+        <div class="rate-btns">
+            <span class="rate-btn rate-1" data-rate="1">1</span>
+            <span class="rate-btn rate-2" data-rate="2">2</span>
+            <span class="rate-btn rate-3" data-rate="3">3</span>
+            <span class="rate-btn rate-4" data-rate="4">4</span>
+            <span class="rate-btn rate-5" data-rate="5">5</span>
         </div>
 
-        <button class="btn">
+        <button class="btn" id="rate-submit">
             Submit
         </button>
     </div>
@@ -54,10 +54,10 @@
 
     <!-- Thank you state start -->
 
-    <div class="thank-you-rate" style="display: none">
+    <div class="thank-you-rate hidden" id="result">
         <img alt="thank you icon" class="thanks-img" src="images/illustration-thank-you.svg">
 
-        <div class="rate-result-section">You selected <span id="rate-result">5</span> out of 5</div>
+        <div class="rate-result-section">You selected <span id="selectedRate">5</span> out of 5</div>
 
         <h1 class="main-title">Thank you!</h1>
 
@@ -75,5 +75,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Chiira</a>.
 </div>-->
+<script src="main.js"></script>
 </body>
 </html>

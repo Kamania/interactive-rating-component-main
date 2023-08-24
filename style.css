@@ -25,7 +25,7 @@ body {
     padding: 1.5rem;
 }
 
-.rate:hover{
+.rate-btn:hover{
     background-color: var(--orange);
     color: var(--white);
 }
@@ -55,13 +55,13 @@ body {
     justify-self: left;
 }
 
-.rate-btn {
+.rate-btns {
     display: flex;
     justify-content: space-between;
     margin: 2em 0;
 }
 
-.rate {
+.rate-btn {
     background: hsla(216, 12%, 54%, .1);
     width: 20px;
     height: 20px;
@@ -70,11 +70,16 @@ body {
     border-radius: 50%;
 }
 
+.rate-btn.active {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
 .main-title {
     color: var(--white);
 }
 
-.description, .rate {
+.description, .rate-btn {
     color: var(--light-grey);
 }
 
@@ -91,4 +96,8 @@ body {
 .btn:hover{
     background-color: var(--white);
     color: var(--orange);
+}
+
+.hidden{
+    display: none;
 }
